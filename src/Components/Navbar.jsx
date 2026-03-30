@@ -2,7 +2,7 @@
 const Navbar = () => {
     return (
         <div className="shadow-sm">
-            <div class="navbar bg-base-100 container mx-auto  py-5">
+            <div class="navbar bg-base-100 lg:w-10/12 mx-auto py-5">
 
 
                 <div className="navbar-start lg:hidden">
@@ -22,7 +22,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div class="navbar-start">
+                <div class="navbar-start flex justify-center lg:justify-start">
                     <img className="w-45" src="/DigiTools.png" alt="" />
                 </div>
 
@@ -36,7 +36,7 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                <div className="navbar-end flex gap-4">
+                <div className="navbar-end  gap-4 ml-10">
                     <div className="flex-none">
                         <div className="dropdown dropdown-end">
                             <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
@@ -50,8 +50,8 @@ const Navbar = () => {
 
                     </div>
 
-                    <button className="font-semibold text-[#101727] text-base">Login</button>
-                    <button className="font-semibold text-white text-base px-4 py-3 rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA]">Get Started</button>
+                    <button className="hover:text-[#101727]/50 cursor-pointer font-semibold text-[#101727] text-base">Login</button>
+                    <button className="btn font-semibold text-white text-base px-4 py-5 rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] hidden md:flex">Get Started</button>
                 </div>
             </div>
         </div>
