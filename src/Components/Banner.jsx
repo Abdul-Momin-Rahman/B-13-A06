@@ -29,7 +29,7 @@ const Banner = () => {
                         </button>
                     </div>
                 </div>
-                <div className="right w-[500px] h-[600px] flex justify-center items-center">
+                <div className="right w-125 h-150 flex justify-center items-center">
                     <img className='w-full' src={banner} alt="" />
 
                 </div>
