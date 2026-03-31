@@ -1,5 +1,6 @@
 import './App.css'
 import Banner from './Components/Banner'
+import Cart from './Components/Cart'
 import Digital from './Components/Digital'
 import Footer from './Components/Footer'
 import Navbar from './Components/Navbar'
@@ -8,7 +9,7 @@ import ProductSection from './Components/ProductSection'
 import Ready from './Components/Ready'
 import Stats from './Components/Stats'
 import StepsSection from './Components/StepsSection'
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 
 
 const getCard = async () => {
@@ -22,6 +23,10 @@ function App() {
   const dataPromise = getCard();
   // console.log(Promise);
 
+  const [activeTab, setActiveTab] = useState('products')
+
+  console.log(activeTab);
+
   return (
     <>
 
@@ -29,16 +34,26 @@ function App() {
       <Banner />
       <Stats />
 
-      <Digital />
-      
-      <Suspense  fallback={<span className="loading loading-spinner loading-xl"></span>}>
-        <ProductSection dataPromise={dataPromise}/>
-      </Suspense>
+      <Digital activeTab={activeTab} setActiveTab={setActiveTab} />
 
-      <StepsSection/>
-      <Pricing/>
-      <Ready/>
-      <Footer/>
+
+      {
+        activeTab === "products" ?
+
+          <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
+            <ProductSection dataPromise={dataPromise} />
+          </Suspense>
+
+          : <Cart />
+      }
+
+
+
+
+      <StepsSection />
+      <Pricing />
+      <Ready />
+      <Footer />
 
     </>
   )
