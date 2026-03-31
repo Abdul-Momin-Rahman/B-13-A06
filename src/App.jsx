@@ -1,3 +1,4 @@
+
 import './App.css'
 import Banner from './Components/Banner'
 import Cart from './Components/Cart'
@@ -24,27 +25,30 @@ function App() {
   // console.log(Promise);
 
   const [activeTab, setActiveTab] = useState('products')
+  // console.log(activeTab);
 
-  console.log(activeTab);
+  const [cart, SetCart] = useState([])
+  // console.log(cart);
+
 
   return (
     <>
 
-      <Navbar />
+      <Navbar cart={cart} />
       <Banner />
       <Stats />
 
-      <Digital activeTab={activeTab} setActiveTab={setActiveTab} />
+      <Digital activeTab={activeTab} setActiveTab={setActiveTab} cart={cart} />
 
 
       {
         activeTab === "products" ?
 
-          <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
-            <ProductSection dataPromise={dataPromise} />
+          <Suspense fallback={<div className='flex justify-center'><span className=" loading loading-spinner loading-xl"></span></div>}>
+            <ProductSection  cart={cart} SetCart={SetCart}  dataPromise={dataPromise} />
           </Suspense>
 
-          : <Cart />
+          : <Cart  cart={cart} SetCart={SetCart}/>
       }
 
 

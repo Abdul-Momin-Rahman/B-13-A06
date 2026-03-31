@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { FaCheck } from 'react-icons/fa6';
 
 
@@ -8,8 +8,11 @@ const tagStyles = {
     popular: 'bg-[#E1E7FF] text-[#6E29F8]',
 };
 
-const Card = ({ data }) => {
+const Card = ({cart, SetCart, data }) => {
     // console.log(data);
+    
+    const isInCart = cart.some(item => item.id === data.id);
+
     return (
         <div className='p-6  bg-[#F2F2F2] relative flex flex-col gap-4 rounded-2xl shadow-xl h-full'>
             <div className='absolute flex top-2.5 right-2.5  '>
@@ -36,7 +39,13 @@ const Card = ({ data }) => {
                 }
             </ul>
 
-            <button className="btn font-semibold text-white text-base px-4 py-5 rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA]">Buy Now</button>
+            <button className={`btn font-semibold text-white text-base px-4 py-5 rounded-3xl ${isInCart? 'bg-green-400' : 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]'}`} 
+            onClick={()=> {
+                isInCart? alert('Already added'): SetCart([...cart,data]);
+               
+            }}>
+                {isInCart? 'Added to Cart' : 'Buy Now'}
+            </button>
         </div>
     );
 };
