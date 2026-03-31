@@ -2,7 +2,7 @@
 const Navbar = () => {
     return (
         <div className="shadow-sm">
-            <div class="navbar bg-base-100 lg:w-10/12 mx-auto py-5">
+            <div className="navbar bg-base-100 lg:w-10/12 mx-auto py-5">
 
 
                 <div className="navbar-start lg:hidden">
@@ -22,12 +22,12 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div class="navbar-start flex justify-center lg:justify-start">
+                <div className="navbar-start flex justify-center lg:justify-start">
                     <img className="w-45" src="/DigiTools.png" alt="" />
                 </div>
 
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+                <div className="navbar-center hidden lg:flex">
+                    <ul className="menu menu-horizontal px-1">
                         <li className="font-semibold text-[#101727] text-base"><a>Products</a></li>
                         <li className="font-semibold text-[#101727] text-base"><a>Features</a></li>
                         <li className="font-semibold text-[#101727] text-base"><a>Pricing</a></li>

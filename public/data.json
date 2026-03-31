@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Pack",
+    "description": "Basic resume builder for freshers with essential templates.",
+    "price": 5,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["10+ templates", "Basic customization", "Export to PDF"],
+    "icon": "../src/assets/products/envelope_11807231.png"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced resume builder with ATS optimization.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["50+ templates", "ATS optimization", "Cover letter builder"],
+    "icon": "../src/assets/products/writing_2327400 1.png"
+  },
+  {
+    "id": 3,
+    "name": "Career Boost Plan",
+    "description": "Complete package for job seekers with premium features.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best_seller",
+    "features": ["100+ templates", "AI suggestions", "LinkedIn optimization"],
+    "icon": "../src/assets/products/operation.png"
+  },
+  {
+    "id": 4,
+    "name": "Portfolio Builder",
+    "description": "Create stunning portfolios to showcase your work.",
+    "price": 8,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Custom domains", "Drag & drop builder", "Responsive design"],
+    "icon": "../src/assets/products/portfolio.png"
+  },
+  {
+    "id": 5,
+    "name": "Interview Prep Kit",
+    "description": "Practice and prepare for interviews effectively.",
+    "price": 20,
+    "period": "one-time",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Mock interviews", "Common Q&A", "Feedback system"],
+    "icon": "../src/assets/products/meeting_850155.png"
+  },
+  {
+    "id": 6,
+    "name": "AI Career Assistant",
+    "description": "Get AI-driven career guidance and resume improvements.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best_seller",
+    "features": ["AI resume review", "Job matching", "Skill suggestions"],
+    "icon": "../src/assets/products/bot-assistant_16194384.png"
+  },
+  {
+    "id": 7,
+    "name": "Freelancer Toolkit",
+    "description": "Tools for freelancers to manage clients and proposals.",
+    "price": 60,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Proposal templates", "Invoice generator", "Client tracking"],
+    "icon": "../src/assets/products/freelancer_3663597.png"
+  },
+  {
+    "id": 8,
+    "name": "Ultimate Job Bundle",
+    "description": "All-in-one solution for job seekers and professionals.",
+    "price": 120,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best_seller",
+    "features": ["All features unlocked", "Priority support", "Unlimited exports"],
+    "icon": "../src/assets/products/job-seeker_6214062.png"
+  },
+  {
+    "id": 9,
+    "name": "LinkedIn Optimization Pack",
+    "description": "Enhance your LinkedIn profile to attract recruiters.",
+    "price": 10,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Profile review", "Headline optimization", "Keyword enhancement"],
+    "icon": "../src/assets/products/linkedin_2111465.png"
+  }
+]

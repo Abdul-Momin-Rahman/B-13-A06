@@ -17,42 +17,42 @@ const Footer = () => {
                     <div className="flex flex-col gap-4 items-center lg:items-start">
                         <h1 className="text-xl font-medium">Product</h1>
 
-                        <p className="text-base opacity-60">Features</p>
-                        <p className="text-base opacity-60">Pricing</p>
-                        <p className="text-base opacity-60">Templates</p>
-                        <p className="text-base opacity-60">Integrations</p>
+                        <p className="text-base opacity-60 cursor-pointer">Features</p>
+                        <p className="text-base opacity-60 cursor-pointer">Pricing</p>
+                        <p className="text-base opacity-60 cursor-pointer">Templates</p>
+                        <p className="text-base opacity-60 cursor-pointer">Integrations</p>
 
                     </div>
                     <div className="flex flex-col gap-4 items-center lg:items-start">
                         <h1 className="text-xl font-medium">Company</h1>
 
-                        <p className="text-base opacity-60">About</p>
-                        <p className="text-base opacity-60">Blog</p>
-                        <p className="text-base opacity-60">Careers</p>
-                        <p className="text-base opacity-60">Press</p>
+                        <p className="text-base opacity-60 cursor-pointer">About</p>
+                        <p className="text-base opacity-60 cursor-pointer">Blog</p>
+                        <p className="text-base opacity-60 cursor-pointer">Careers</p>
+                        <p className="text-base opacity-60 cursor-pointer">Press</p>
                     </div>
                     <div className="flex flex-col gap-4 items-center lg:items-start">
                         <h1 className="text-xl font-medium">Resources</h1>
 
-                        <p className="text-base opacity-60">Documentation</p>
-                        <p className="text-base opacity-60">Help Center</p>
-                        <p className="text-base opacity-60">Community</p>
-                        <p className="text-base opacity-60">Contact</p>
+                        <p className="text-base opacity-60 cursor-pointer">Documentation</p>
+                        <p className="text-base opacity-60 cursor-pointer">Help Center</p>
+                        <p className="text-base opacity-60 cursor-pointer">Community</p>
+                        <p className="text-base opacity-60 cursor-pointer">Contact</p>
                     </div>
                     <div className="flex flex-col gap-4 items-center ">
                         <h1 className="text-xl font-medium">Social Links</h1>
                         <div className="flex gap-3">
-                            <div className='bg-white w-10 h-10 rounded-full flex items-center justify-center relative overflow-visible'>
+                            <div className='bg-white w-10 h-10 rounded-full flex items-center justify-center relative overflow-visible cursor-pointer'>
 
                                 <TbBrandInstagramFilled className="text-black w-5 h-5" />
 
                             </div>
-                            <div className='bg-white w-10 h-10 rounded-full flex items-center justify-center relative overflow-visible'>
+                            <div className='bg-white w-10 h-10 rounded-full flex items-center justify-center relative overflow-visible cursor-pointer'>
 
                                 <IoLogoFacebook className="text-black w-5 h-5" />
 
                             </div>
-                            <div className='bg-white w-10 h-10 rounded-full flex items-center justify-center relative overflow-visible'>
+                            <div className='bg-white w-10 h-10 rounded-full flex items-center justify-center relative overflow-visible cursor-pointer'>
 
                                 <FaXTwitter className="text-black w-5 h-5" />
 

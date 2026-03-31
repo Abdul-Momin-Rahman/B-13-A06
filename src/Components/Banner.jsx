@@ -23,7 +23,7 @@ const Banner = () => {
                     <div className='flex gap-4 justify-center lg:justify-start'>
                         <button className="btn font-semibold text-white text-base px-4 py-5 rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA] ">Explore Products</button>
 
-                        <button class="btn    rounded-3xl text-base px-4 py-5 bg-clip-text text-transparent bg-linear-to-r from-[#4F39F6] to-[#9514FA] font-bold">
+                        <button className="btn    rounded-3xl text-base px-4 py-5 bg-clip-text text-transparent bg-linear-to-r from-[#4F39F6] to-[#9514FA] font-bold">
                             <img src="/Vector.png" alt="" />
                             Watch Demo
                         </button>
