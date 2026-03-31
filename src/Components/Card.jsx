@@ -1,5 +1,6 @@
 
 import { FaCheck } from 'react-icons/fa6';
+import { toast } from 'react-toastify';
 
 
 const tagStyles = {
@@ -41,7 +42,13 @@ const Card = ({cart, SetCart, data }) => {
 
             <button className={`btn font-semibold text-white text-base px-4 py-5 rounded-3xl ${isInCart? 'bg-green-400' : 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]'}`} 
             onClick={()=> {
-                isInCart? alert('Already added'): SetCart([...cart,data]);
+
+                if(isInCart) {
+                    toast(` ${data.name} is in the cart`)
+                } else {
+                    SetCart([...cart,data])
+                    toast.success(`${data.name} is added to the cart`)
+                } 
                
             }}>
                 {isInCart? 'Added to Cart' : 'Buy Now'}

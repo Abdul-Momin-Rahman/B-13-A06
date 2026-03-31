@@ -1,4 +1,5 @@
 
+import { ToastContainer } from 'react-toastify'
 import './App.css'
 import Banner from './Components/Banner'
 import Cart from './Components/Cart'
@@ -58,6 +59,8 @@ function App() {
       <Pricing />
       <Ready />
       <Footer />
+
+      <ToastContainer />
 
     </>
   )

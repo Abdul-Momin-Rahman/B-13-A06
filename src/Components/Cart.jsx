@@ -1,5 +1,6 @@
 import React from 'react';
 import cartImg from '../assets/products/shopping-cart.png'
+import { toast } from 'react-toastify';
 
 const Cart = ({ cart , SetCart }) => {
     return (
@@ -27,7 +28,10 @@ const Cart = ({ cart , SetCart }) => {
                                         </div>
 
                                         <button className='btn btn-ghost cursor-pointer text-[#FF3980] text-base font-bold'
-                                        onClick={()=> SetCart(cart.filter(cartItem => item.id !== cartItem.id))}
+                                        onClick={()=> {
+                                            SetCart(cart.filter(cartItem => item.id !== cartItem.id))
+                                            toast.error(`${item.name} is removed from the cart`)
+                                        }}
                                         >Remove</button>
                                     </div>
                                 )
@@ -40,8 +44,12 @@ const Cart = ({ cart , SetCart }) => {
                         <p className='text-[#101727] text-2xl font-bold'>${cart.reduce((acc,item) => acc + item.price, 0)}</p>
                     </div>
 
-                    <button className="btn font-semibold text-white text-base px-4 py-5 rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA]" 
-                    onClick={()=> SetCart([])}
+                    <button className="btn  font-semibold text-white text-base px-4 py-5 rounded-3xl bg-linear-to-r from-[#4F39F6] to-[#9514FA]" 
+                    onClick={()=> {
+                        toast(`Proceeding to checkout with ${cart.length} item${cart.length>1? 's': ''}`)
+                        SetCart([])
+
+                    }}
                     >Proceed to Checkout</button>
                 </div>
 
