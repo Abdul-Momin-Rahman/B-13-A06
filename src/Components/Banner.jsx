@@ -3,9 +3,9 @@ import banner from '../assets/banner.png'
 
 const Banner = () => {
     return (
-        <div className='lg:w-10/12 mx-auto py-10 lg:py-20'>
+        <div className='lg:w-10/12 mx-auto py-10 lg:py-20 '>
             <div className='flex flex-col-reverse lg:flex-row items-center justify-between gap-15'>
-                <div className="left flex flex-col gap-8">
+                <div className="left flex flex-col gap-8 flex-1">
                     <div className='flex flex-col gap-4'>
                         <div className='flex items-center  gap-1.25 py-2 px-4 bg-[#E1E7FF] rounded-3xl mx-auto lg:mx-0 justify-center w-fit'>
                             <img className='w-4 h-4' src="/Group5.png" alt="" />
@@ -29,7 +29,7 @@ const Banner = () => {
                         </button>
                     </div>
                 </div>
-                <div className="right w-125 h-150 flex justify-center items-center">
+                <div className="right max-w-125 max-h-150 flex justify-center items-center flex-1">
                     <img className='w-full' src={banner} alt="" />
 
                 </div>

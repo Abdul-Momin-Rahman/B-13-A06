@@ -9,7 +9,7 @@ const StepsSection = () => {
 
 
                 <div className='flex flex-col gap-4 items-center'>
-                    <h1 className='font-extrabold text-5xl text-[#101727]'>Get Started in 3 Steps</h1>
+                    <h1 className='font-extrabold text-3xl text-center lg:text-left lg:text-7xl text-[#101727]'>Get Started in 3 Steps</h1>
                     <p className='text-base text-[#627382]'>Start using premium digital tools in minutes, not hours.</p>
                 </div>
 

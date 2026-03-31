@@ -5,8 +5,8 @@ const Pricing = () => {
         <div className='w-10/12 mx-auto py-30 space-y-10'>
 
             <div className='flex flex-col gap-4 items-center'>
-                <h1 className='font-extrabold text-5xl text-[#101727] text-center'>Simple, Transparent Pricing</h1>
-                <p className='text-base text-[#627382]'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
+                <h1 className='font-extrabold text-3xl text-center lg:text-7xl text-[#101727]'>Simple, Transparent Pricing</h1>
+                <p className='text-base text-[#627382] text-center'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             </div>
 
 
