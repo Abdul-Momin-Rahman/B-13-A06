@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Digital = ({activeTab , setActiveTab, cart}) => {
     
     // console.log(activeTab);

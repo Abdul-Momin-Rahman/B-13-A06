@@ -1,4 +1,3 @@
-import React from 'react';
 import cartImg from '../assets/products/shopping-cart.png'
 import { toast } from 'react-toastify';
 

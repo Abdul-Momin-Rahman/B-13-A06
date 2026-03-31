@@ -19,18 +19,13 @@ const getCard = async () => {
   return res.json();
 }
 
+const dataPromise = getCard();
 
 function App() {
 
-  const dataPromise = getCard();
-  // console.log(Promise);
-
   const [activeTab, setActiveTab] = useState('products')
-  // console.log(activeTab);
 
   const [cart, SetCart] = useState([])
-  // console.log(cart);
-
 
   return (
     <>
