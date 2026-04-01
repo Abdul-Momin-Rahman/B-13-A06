@@ -19,7 +19,7 @@ const Card = ({cart, SetCart, data }) => {
             <div className='absolute flex top-2.5 right-2.5  '>
                 <p className={` ${tagStyles[data.tagType]} px-3 py-2 rounded-3xl  text-sm font-medium w-fit`}>{data.tag}</p>
             </div>
-            <div className='w-15 h-15 rounded-full bg-white  flex justify-center items-center'>
+            <div className='w-15 h-15 rounded-full bg-white  flex justify-center items-center border border-amber-200'>
                 <img className='w-8 h-8' src={data.icon} alt="" />
             </div>
             <h2 className='font-bold text-2xl text-[#101727] flex-1'>{data.name}</h2>

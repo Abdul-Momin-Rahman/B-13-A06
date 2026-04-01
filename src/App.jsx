@@ -40,19 +40,21 @@ function App() {
       {
         activeTab === "products" ?
 
-          <Suspense fallback={<div className='flex justify-center'><span className=" loading loading-spinner loading-xl"></span></div>}>
-            <ProductSection  cart={cart} SetCart={SetCart}  dataPromise={dataPromise} />
-          </Suspense>
+          <div>
+            <Suspense fallback={<div className='flex justify-center'><span className=" loading loading-spinner loading-xl"></span></div>}>
+              <ProductSection cart={cart} SetCart={SetCart} dataPromise={dataPromise} />
+            </Suspense>
 
-          : <Cart  cart={cart} SetCart={SetCart}/>
+            <StepsSection />
+            <Pricing />
+            <Ready />
+
+          </div>
+          : <Cart cart={cart} SetCart={SetCart} />
       }
 
 
 
-
-      <StepsSection />
-      <Pricing />
-      <Ready />
       <Footer />
 
       <ToastContainer />
